@@ -1,40 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farm Products Website</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Logo -->
-        <header>
-            <img src="assets/images/logo.png" alt="Farm Products Logo" class="logo">
-            <h1>Welcome to Our Farm Products Store</h1>
-        </header>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/farm-background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
 
-        <!-- Product List -->
-        <section>
-            <h2>Our Products</h2>
-            <ul>
-                <li>
-                    <img src="assets/images/rabbit-meat.jpg" alt="Rabbit Meat">
-                    Rabbit Meat
-                </li>
-                <li>
-                    <img src="assets/images/chicken-eggs.jpg" alt="Chicken Eggs">
-                    Chicken Eggs
-                </li>
-            </ul>
-        </section>
+.container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    width: 80%;
+    margin: 50px auto;
+}
 
-        <!-- Order Section -->
-        <section>
-            <h2>Place an Order</h2>
-            <p>Order through WhatsApp and let us know what you’d like:</p>
-            <a href="https://wa.me/254716338785">Order on WhatsApp</a>
-        </section>
-    </div>
-</body>
-</html>
+.logo {
+    width: 100px; /* Adjust logo size */
+    height: 100px;
+    object-fit: cover; /* Makes sure it stays neat */
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+li img {
+    width: 80px; /* Adjust product image size */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
